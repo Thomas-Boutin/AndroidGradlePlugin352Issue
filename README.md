@@ -2,6 +2,14 @@
 * Repository showing compiling issue with android gradle plugin 3.5.2+ and databinding.
 * The issue happens when we want to access an observable property of a field, which is itself encapsulated in an observable wrapper (like ObservableField or LiveData)
 * The issue happens with the use of a two way binding converter
+* It results in a kapt exception : **cannot generate view binders java.lang.IndexOutOfBoundsException: Index: -1, Size: 0**
+
+## Details for build tools and Gradle
+* Gradle version: 5.4.1.
+* Android Plugin Version : 3.5.3.
+* Module Compile Sdk Version: 29.
+* Module Build Tools Version: 29.0.2.
+* Android SDK Tools version: 26.1.1.
 
 ## Branches
 * master : branch which demonstrates the issue with android gradle plugin 3.5.3
